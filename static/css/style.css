@@ -1,0 +1,60 @@
+#container {
+  font-family: Helvetica, Geneva, Arial, sans-serif;
+  font-size: 20px;
+  padding-left: 20px;
+  background-color: white;
+  color: #2a2929;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color:  red;
+}
+
+a:link {
+  font-size: 120%;
+  text-decoration: none;
+  color: red;
+}
+
+a:hover {
+  color: #cd7f32;
+}
+
+h1 {
+  color: #d69544;
+  font-size: 200%;
+  margin: 20px;
+}
+
+form {
+  border: 2px solid #d69544;
+  border-radius: 10px;
+  margin: 5px;
+  font-size: 120%;
+  padding: 5px;
+  overflow: hidden;
+}
+
+label {
+  font-size: 110%;
+  padding: 5px;
+  margin: 5px;
+  text-align: left;
+}
+
+input {
+  padding: 5px 2px;
+}
+
+.inputs {
+  padding: 5px;
+  text-align: left;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}

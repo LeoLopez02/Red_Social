@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="static/css/style.css" rel="stylesheet" type="text/css">
+        <script src="static/js/profile.js"></script>
+        <title>SocNet </title>
+    </head>
+    <body>
+        <div id="container">
+            <a href="/">SocNet</a>| <a href="home">Home</a> | <a href="logout">Log Out ({{ nickname }})</a>
+            <h1>
+                Hi, How are you?
+            </h1>
+            <div>
+                <div id="left">
+                    <form action="home" method="post" name="post" onsubmit="return validateHome(this)">
+                        <label for="post">
+                            Say something:
+                        </label>
+                        <div class="inputs">
+                            <input id="post" maxlength="500" name="message" size="80" type="text" value=""/>
+                            {% for message in messages %}
+                                <li> {{ message[1] }}</li>
+                            {% endfor %}
+                        </div>
+                        <div class="inputs">
+                            <input id="post_submit" name="post_submit" type="submit" value="Post!"/>
+                        </div>
+                    </form>
+                </div>
+                <div id="right">
+                    <form>
+                        <label for="post">
+                            What your friends are saying:
+                        </label>
+                        <div class="inputs">
+                            {% for message in friends_messages %}
+                                <li> {{ message[0] }}: {{ message[2] }}</li>
+                            {% endfor %}
+                        </div>
+                    </form>
+                </div>
+                <div id="friends">
+                    Select friend to see what he/she is saying: 
+                    <div class="impar" id="t1">
+                        <input type="checkbox" name="friends" onclick="">
+                        roberto@mail.com
+                    </div>
+                    <div class="par" id="t2">
+                        <input type="checkbox" name="friends" onclick="">
+                        roberto@mail.com
+                    </div>
+                    <div class="impar" id="t3">
+                        <input type="checkbox" name="friends" onclick="">
+                        roberto@mail.com
+                    </div>
+                    <div class="par" id="t4">
+                        <input type="checkbox" name="friends" onclick="">
+                        roberto@mail.com
+                    </div>
+                    <div class="impar" id="t5">
+                        <input type="checkbox" name="friends" onclick="">
+                        roberto@mail.com
+                    </div>
+                    <div class="par" id="t6">
+                        <input type="checkbox" name="friends" onclick="">
+                        roberto@mail.com
+                    </div>
+                    <div class="impar" id="t7">
+                        <input type="checkbox" name="friends" onclick="">
+                        roberto@mail.com
+                    </div>
+                    <div class="par" id="t8">
+                        <input type="checkbox" name="friends" onclick="">
+                        roberto@mail.com
+                    </div>
+                    <div class="impar" id="t9">
+                        <input type="checkbox" name="friends" onclick="">
+                        roberto@mail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

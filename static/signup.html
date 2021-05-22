@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>SocNet</title>
+    <script src="static/js/profile.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <a href="/">SocNet</a> | <a href="login">Log In</a>
+      <h1>Sign Up</h1>
+      <form
+        action="signup"
+        method="post"
+        name="signup"
+        onsubmit="return validateSignUp(this)"
+        >
+
+        <ul class="errorMessages" id="errores_profile"></ul>
+
+        <label for="nickname">Nickname</label>
+        <div class="inputs">
+          <input
+            id="nickname"
+            name="nickname"
+            maxlength="64"
+            placeholder="Nickname"
+            size="80"
+            type="text"
+            value=""
+          />
+        </div>
+        <label for="email">Email</label>
+        <div class="inputs">
+          <input
+            id="email"
+            name="email"
+            maxlength="64"
+            placeholder="Email"
+            size="80"
+            type="text"
+            value=""
+          />
+        </div>
+        <label for="passwd">Password</label>
+        <div class="inputs">
+          <input
+            id="passwd"
+            name="passwd"            
+            placeholder="Password"
+            size="80"
+            type="password"
+            value=""
+          />
+        </div>
+        <label for="passwd_confirmation">Repeat Password</label>
+        <div class="inputs">
+          <input
+            id="passwd_confirmation"
+            name="passwd_confirmation"
+            placeholder="Repeat Password"
+            size="80"
+            type="password"
+            value=""
+          />
+        </div>
+        <div class="inputs">
+          <input
+            id="signup_submit"
+            name="signup_submit"
+            type="submit"
+            value="Sign Up"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

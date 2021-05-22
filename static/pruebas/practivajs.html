@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <script>
+        var a = 3;
+        var b = 5;
+        var resultado = null;
+
+        function mostrarVariable(a){
+            alert(a);
+        }
+
+        function mostrarVariable(b){
+            alert(b);
+        }
+
+        function sumar(a, b){
+            alert(a + b);
+        }
+    </script>
+</head>
+<body>
+    Pulsa para ver el primer t&eacute;rmino
+        <input type="button" value="T1" onClick="mostrarVariable(a)"/>
+    <br>
+    Pulsa para ver el segundo t&eacute;rmino
+        <input type="button" value="T2" onClick="mostrarVariable(b)"/>
+    <br>
+    Pulsa para sumar
+        <input type="button" value="Sumar" onclick="sumar()"/>
+    <br>
+    Pulsa para ver el resultado de la suma
+        <input type="button" value="T1+T2" onclick="resultado(a, b)"/>
+</body>
+</html>
